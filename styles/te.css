@@ -1,0 +1,202 @@
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body,
+h1,
+h2
+{
+	margin: 0;
+}
+main{
+	margin:0rem;
+	padding: 0rem;
+	max-height: 433rem;
+}
+/*Controlador de menu*/
+.menu{
+	display: flex;
+	justify-content: flex-start;
+    background:linear-gradient(to bottom, transparent, rgb(135, 110, 88));
+}
+.menu,
+.menu ul{
+	margin: 0px;
+	padding:0px;
+	
+	list-style: none;
+
+	
+}
+.menu a{
+	display: block;
+	padding: .9rem;
+	color:#eee;
+	text-decoration: none;
+}
+.menu i{
+	color:red;
+}
+.menu ul{
+	display: none;
+	min-width: 5rem;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+.menu li{position: relative;}
+.menu li:hover > ul{display: block}
+.menu li:hover{ background: red; }
+/*Controlador del Header*/
+#header{
+    
+	padding: 20% 3rem;
+	text-align: center;
+	color: #eee;
+    text-shadow: 0 0 .5rem #333;
+    background-color: #333;
+    background-image:url('../assets/img/Mas.png');
+    background-size:  100%;
+    background-repeat: no-repeat;
+    
+}
+.example{
+	margin: 0rem;
+	border-left:.1rem;
+	border-left:.2rem solid rgb(169, 148, 105);
+    border-bottom: .2rem solid rgb(169, 148, 105);
+    padding: .5rem;
+    list-style: none;
+    background-color: rgb(43,45,57);
+    line-height: 1.0rem;
+    max-width: auto;
+
+
+}
+.grilla{ /*Mantiene las 3 Imagenes en Orden Horizontal*/
+	display: flex;
+		 		justify-content: center;
+		 		flex-wrap: wrap;
+		 		gap:5%;
+	}
+    
+   
+    
+	
+	
+
+.imagen{/*Controla las Propiedades de las Cajas celestes*/
+	position: relative;
+	height: 620px;
+    
+	max-width: 320px;
+	overflow: hidden;			
+	margin: 1.4rem;			
+	padding: 1px 1px;			
+	box-shadow: 0 0 .5rem;
+	background-color: rgb(146, 189, 208);
+	cursor:pointer;
+}
+.imagen img{/*Controla las Propiedades de las Imagenes*/
+
+	height: 100%;
+	width: 100%;
+	filter:drop-shadow(5px 5px 5px #000);
+	transition: all 500ms ease-out;
+	
+}
+.imagen p.texto{/*Controla las Propiedades de los Textos*/
+	position: absolute;
+	top: 0;
+     
+	width: 100%;
+	height: 100%;
+	background: rgba(145, 188, 207, 0.7);
+	transition: all 500ms ease-out;
+	opacity: 0;
+	visibility: hidden;
+	text-align: center;
+
+}/*Controla las Propiedades del HOVER sobre las cajas*/
+.imagen:hover >img{transition: all 0.5s 0s ease;filter: blur(1px);filter:drop-shadow(5px 5px 5px #000);}
+.imagen:hover > p.texto{opacity: 1;visibility: visible;}	
+    
+	
+
+
+	
+	
+
+
+
+
+.armas{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.armas li{
+	overflow: hidden;
+	margin: .5rem;
+	border: .2rem #333;
+	padding: 1rem;
+	line-height: 5rem;
+	max-width: 15rem;
+	color:#333;
+	background-color: #448;
+	background-position: center;
+	text-align: center;
+	
+
+}
+.armas :nth-child(1){border-radius: 1rem;
+    background-image: url('../assets/img/hb.png');
+    background-size: 87% ;
+    background-position: center ;
+    background-repeat: no-repeat;}
+.armas :nth-child(2){border-radius: 1rem;
+    background-image: url('../assets/img/CAÑO.jpg');
+    background-size: 70% ;
+    background-position: center ;
+    background-repeat: no-repeat;}
+.armas :nth-child(3){border-radius: 1rem;
+    background-image: url('../assets/img/Cuchi.jpg');
+    background-size: 70% ;
+    background-position: center ;
+    background-repeat: no-repeat;}
+.armas :nth-child(4){border-radius: 1rem;
+    background-image: url('../assets/img/PESA.jpg');
+    background-size: 70% ;
+    background-position: center ;
+    background-repeat: no-repeat;}
+.armas :nth-child(5){border-radius: 1rem;
+    background-image: url('../assets/img/bashe.png');
+    background-size: 70% ;
+    background-position: center ;
+    background-repeat: no-repeat;}
+
+
+
+
+
+			
+/*Pie de pagina*/
+#footer{
+	
+	
+	padding: 3rem ;
+	color:#eee;
+	background-color: #248;
+}	
+
+
+
+
+
+
+
+
+
+
+
+
